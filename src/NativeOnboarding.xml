@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="incentro.nativeonboarding.NativeOnboarding" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Onboarding</name>
+    <description>Set up A simple Native Onboarding section</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="pages" type="object" isList="true">
+                <caption>Onboarding pages</caption>
+                <description/>
+                <properties>
+                    <propertyGroup caption="Object list group">
+                        <property key="pageTitle" type="string" required="true">
+                            <caption>Title</caption>
+                            <description>Enter a title.</description>
+                        </property>
+                        <property key="pageBackground" type="string" required="false">
+                            <caption>Background color</caption>
+                            <description>Enter a valid color.</description>
+                        </property>
+                        <property key="pageSubTitle" type="string" required="false" multiline="true">
+                            <caption>Subtitle</caption>
+                            <description>Enter a subtitle.</description>
+                        </property>
+                        <property key="pageImage" type="image" required="true">
+                            <caption>Image</caption>
+                            <description>Image for this onboarding slide.</description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Actions">
+            <property key="showSkip" type="boolean" defaultValue="true">
+                <caption>Show skip button</caption>
+                <description>Can the onboarding be skipped?</description>
+            </property>
+            <property key="doneAction" type="action">
+                <caption>Complete action</caption>
+                <description>Action to be performed after completing onboarding.</description>
+            </property>
+            <property key="skipAction" type="action">
+                <caption>Skip action</caption>
+                <description>Action on skipping the onboarding.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Colors">
+            <property key="bottombarHighlight" type="boolean" defaultValue="true">
+                <caption>Highlight bottombar?</caption>
+                <description>Background highlight the bottombar</description>
+            </property>
+            <property key="bottombarTextColor" type="string" required="true" defaultValue="#000000">
+                <caption>Bottombar text color</caption>
+                <description>Enter a valid color.</description>
+            </property>
+            <property key="dotColor" type="string" required="true" defaultValue="#DDDDDD">
+                <caption>Dot background color</caption>
+                <description>Dots background color (except for the current page dot).</description>
+            </property>
+            <property key="currentPageDotColor" type="string" required="true" defaultValue="#bada55">
+                <caption>Current page dot color</caption>
+                <description>Slider dot color for current page.</description>
+            </property>
+            <property key="doneButtonColor" type="string" required="true" defaultValue="#bada55">
+                <caption>Done btn bg</caption>
+                <description>Done button background color</description>
+            </property>
+            <property key="doneButtonText" type="string" required="true" defaultValue="black">
+                <caption>Done btn color</caption>
+                <description>Done button text color</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Text">
+            <property key="skipText" type="string" required="true" defaultValue="Skip">
+                <caption>Skip button text</caption>
+                <description></description>
+            </property>
+            <property key="nextText" type="string" required="true" defaultValue="Next">
+                <caption>Next button text</caption>
+                <description></description>
+            </property>
+            <property key="doneText" type="string" required="true" defaultValue="Done">
+                <caption>Done button text</caption>
+                <description></description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

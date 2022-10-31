@@ -1,0 +1,32 @@
+{
+  "name": "nativeonboarding",
+  "widgetName": "NativeOnboarding",
+  "version": "1.0.0",
+  "description": "Set up A simple Native Onboarding section",
+  "copyright": "2022 Incentro",
+  "author": "Rob Duits",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT",
+  "config": {
+    "projectPath": "../../"
+  },
+  "packagePath": "incentro",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:native",
+    "build": "pluggable-widgets-tools build:native",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:native"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.17.0"
+  },
+  "dependencies": {
+    "@rneui/base": "^4.0.0-rc.2",
+    "@rneui/themed": "^4.0.0-rc.2",
+    "react-native-onboarding-swiper": "^1.2.0"
+  }
+}
