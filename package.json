@@ -22,11 +22,9 @@
     "release": "pluggable-widgets-tools release:native"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^9.17.0"
+    "@mendix/pluggable-widgets-tools": "^9.18.0"
   },
   "dependencies": {
-    "@rneui/base": "^4.0.0-rc.2",
-    "@rneui/themed": "^4.0.0-rc.2",
     "react-native-onboarding-swiper": "^1.2.0"
   }
 }
