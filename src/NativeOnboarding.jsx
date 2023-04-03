@@ -17,7 +17,7 @@ const styles = {
   onboarding: { justifyContent: 'center' },
   title: {
     color: '#4B4B4B',
-    fontSize: 30,
+    fontSize: 26,
     fontWeight: '400',
     textAlign: 'left',
     width: windowWidth - spacing.regular * 2,
